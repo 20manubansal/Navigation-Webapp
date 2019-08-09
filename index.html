@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.css' rel='stylesheet' />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    
+
+    <!-- //geocode -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.min.js'></script>
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.css' type='text/css' />
+
+  </head>
+  
+  
+  
+  <body>
+
+    <div id='map'></div>
+
+
+    <div id="instructions" >    
+      </div>
+  
+  
+      <div id="form" >
+
+
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label" align="center">From</label>
+        <div class="col-sm-7">
+          <input class="form-control" id="startipbox" placeholder="">
+        </div>
+    </div>
+      <div class="form-group row">
+          <label class="col-sm-2 col-form-label" align="center">To</label>
+          <div class="col-sm-7">
+            <input class="form-control" id="endipbox" placeholder="">
+          </div>
+          <div class="col">
+              <button class="btn btn-outline-success my-2 my-sm-0" onclick="getRouteFromIn()" >Find Path</button>
+
+          </div>
+      </div>
+          
+        </div>
+      
+  
+    
+          <pre id='coordinates' class='coordinates'></pre>
+          <pre id='coordinates2' class='coordinates2'></pre>
+          
+    </body>
+  
+    </html>
+
+    <script src="initmap.js"></script>
+
+    <script src="getname.js"></script>
+    <script src="getRoute.js"></script>
+    <script src="getRouteFromIn.js"></script>
+
+
+    <script src="onDragEnd.js"></script>

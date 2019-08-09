@@ -1,0 +1,77 @@
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+      }
+
+      #instructions {
+  position: absolute;
+  margin: 20px;
+  width: 25%;
+  top: 20%;
+  bottom: 0.5%;
+  left: 68%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  overflow-y: scroll;
+  font-family: sans-serif;
+  font-size: 0.6em;
+  line-height: 2em;
+  border-style: solid;
+  border-color: #75cff0;
+  border-width: 1px;
+  
+}
+#form {
+  position: absolute;
+  margin: 20px;
+  width: 93%;
+  height: 18%;
+  top: -1%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  font-family: sans-serif;
+  border-style: solid;
+  border-color: #75cff0;
+  border-width: 1px;
+ 
+  
+}
+
+.duration {
+  font-size: 1.5em;
+}
+
+.coordinates {
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    position: absolute;
+    bottom: 110px;
+    left: 10px;
+    padding:5px 10px;
+    margin: 0;
+    font-size: 11px;
+    line-height: 18px;
+    border-radius: 3px;
+    display: none;
+}
+  
+.coordinates2 {
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+    padding:5px 10px;
+    margin: 0;
+    font-size: 11px;
+    line-height: 18px;
+    border-radius: 3px;
+    display: none;
+}
